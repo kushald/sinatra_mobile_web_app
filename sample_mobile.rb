@@ -7,7 +7,7 @@ class Event
 	property :type, String
 	property :description, String
 end
-DataMapper::setup(:default,ENV['DATABASE_URL'] || 'mysql://root:qwaszx@localhost/pilltracker')
+DataMapper::setup(:default,ENV['DATABASE_URL'])
 DataMapper.finalize.auto_upgrade!
 
 get '/' do

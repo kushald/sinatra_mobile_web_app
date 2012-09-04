@@ -8,6 +8,6 @@ gem 'data_mapper'
 gem 'haml'
 gem 'data_mapper'
 
-group :production do
-  gem 'dm-postgres-adapter'
-end
+
+gem 'dm-postgres-adapter', :group => :production
+
