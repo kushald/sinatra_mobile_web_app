@@ -1,4 +1,4 @@
-%w{sinatra dm-core data_mapper haml time}.each { |lib| require lib}
+%w{rubygems sinatra dm-core data_mapper haml time}.each { |lib| require lib}
 
 class Event
 	include DataMapper::Resource
